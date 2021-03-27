@@ -1,1 +1,194 @@
-Hello, world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 14px;
+      background-color: rgba(81, 106, 115, 0.5);
+      height: 8vh;
+      position: absolute;
+      bottom: 0;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 0.7;
+
+    }
+    .attribution a { 
+      color: hsl(189deg 5% 72%)
+    }
+    .attribution a:hover { 
+     color: #fff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .app {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background: no-repeat url(./images/bg-pattern-top.svg),no-repeat url(./images/bg-pattern-bottom.svg);
+      background-position: top calc(-50vh) left calc(100% - 50vw), 50vw 50vh;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    /* .app::before {
+      content: "";
+      display: block;
+      top: 10%;
+      left: -40%;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: url("./images/bg-pattern-top.svg") no-repeat;
+      background-position: top calc(-50vh) left calc(100% - 50vw);
+      transform: rotate(90deg);
+      overflow: hidden;
+      z-index: -1;
+
+    } */
+    .main-block  {
+      height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .content {
+      width: 350px;
+      height: 380px;
+      /* margin: auto; */
+      background-color:#fff;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+    }
+    .content_avatar {
+        background-image: url('./images/bg-pattern-card.svg');
+        height: 140px;
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    img {
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    .content_img {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      top: calc( 100% - 53px);
+    }
+
+    .content_infor {
+    text-align: center;
+    margin-top: 44px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 26px;
+  }
+
+    .content__name {
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .content__age {
+      display: inline-block;
+      opacity: 0.8;
+
+    }
+
+    .content__city {
+    display: block;
+    opacity: 0.8;
+    font-size: 15px;
+    margin-top: 14px;
+
+    }
+
+
+    .content_status {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .infor {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
+    .num {
+      font-weight: bold;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .type {
+      font-size: 10px;
+      opacity: 0.7;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="main-block">
+      <div class="content">
+        <div class="content_avatar">
+          <div class="content_img">
+            <img src="./images/image-victor.jpg" alt="avatar">
+          </div>
+        </div>
+        <div class="content_infor">
+          <span class="content__name">Victor Crest</span>
+          <span class="content__age">26</span>
+          <span class="content__city">London</span>
+        </div>
+        <div class="content_status">
+          <section class="infor">
+            <span class="num">80K</span>
+            <span class="type">Followers</span>
+          </section> 
+          <section class="infor">
+            <span class="num">803K</span>
+            <span class="type">Likes</span>
+          </section> 
+          <section class="infor">
+            <span class="num">1.4K</span>
+            <span class="type">Photos</span>
+          </section> 
+        </div>
+      </div>
+    </div> 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">THANH LUU ks</a>.
+    </div> 
+  
+  </div>
+  
+</body>
+</html>
