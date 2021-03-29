@@ -47,21 +47,6 @@
       background-color: hsl(185, 75%, 39%);
       font-family: 'Kumbh Sans', sans-serif;
     }
-    /* .app::before {
-      content: "";
-      display: block;
-      top: 10%;
-      left: -40%;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background: url("./images/bg-pattern-top.svg") no-repeat;
-      background-position: top calc(-50vh) left calc(100% - 50vw);
-      transform: rotate(90deg);
-      overflow: hidden;
-      z-index: -1;
-
-    } */
     .main-block  {
       height: 92vh;
       display: flex;
@@ -150,7 +135,16 @@
       margin-top: 5px;
       letter-spacing: 1px;
     }
-
+    /* Style for mobile <375px */
+    @media screen and (max-width:499px) {
+      .content {
+        width: 85vw;
+      }
+      .attribution {
+        font-size: 10px;
+      }
+    }       
+    
   </style>
 </head>
 <body>
